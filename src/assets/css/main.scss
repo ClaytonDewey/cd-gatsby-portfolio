@@ -432,7 +432,21 @@ About page
 Portfolio
 ===============
 */
+.portfolio {
+  &__section {
+    padding: 5rem 1rem;
+    animation: fadeIn 1s 1.8s backwards;
+  }
 
+  @media #{$mq-small} {
+    &__section {
+      padding-top: 10rem;
+      width: 100%;
+      max-width: 117rem;
+      margin: 0 auto;
+    }
+  }
+}
 /*
 =============== 
 Contact
