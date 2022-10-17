@@ -150,7 +150,7 @@ article {
 
 @import "./utilities";
 
-$primary-color: var(--clr-dark-blue-green);
+$primary-color: var(--clr-dark-green);
 
 @import 'animate.css';
 @import '~loaders.css/src/animations/pacman.scss';
@@ -381,6 +381,47 @@ Homepage
 About page
 ===============
 */
+.about {
+  &__section {
+    padding: 5rem 1rem;
+  }
+
+  &__content {
+
+    .gatsby-image-wrapper img {
+      border: 1px solid var(--clr-green);
+      border-radius: 5px;
+      display: block;
+      height: auto;
+      margin: auto;
+      max-width: 100%;
+      padding: 1rem;
+    }
+  }
+
+  @media #{$mq-small} {
+    &__section {
+      padding-top: 10rem;
+      width: 100%;
+      max-width: 117rem;
+      margin: 0 auto;
+    }
+
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      align-items: center;
+
+      &-info {
+        grid-column: 1/span 6;
+      }
+
+      &-image {
+        grid-column: 7/span 6;
+      }
+    }
+  }
+}
 
 /*
 =============== 
