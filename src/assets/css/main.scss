@@ -150,7 +150,7 @@ article {
 
 @import "./utilities";
 
-$primary-color: var(--clr-dark-green);
+$primary-color: var(--clr-light-blue-green);
 
 @import 'animate.css';
 @import '~loaders.css/src/animations/pacman.scss';
@@ -330,6 +330,7 @@ Homepage
     position: relative;
 
     &-wrapper {
+      animation: fadeIn 1s 1.8s backwards;
       height: 100%;
       width: 100%;
       left: 50%;
@@ -384,6 +385,7 @@ About page
 .about {
   &__section {
     padding: 5rem 1rem;
+    animation: fadeIn 1s 1.8s backwards;
   }
 
   &__content {
@@ -411,13 +413,15 @@ About page
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       align-items: center;
-
+      
       &-info {
         grid-column: 1/span 6;
+        animation: fadeInLeft 1.5s 1s backwards;
       }
 
       &-image {
         grid-column: 7/span 6;
+        animation: fadeInRight 1.5s 1s backwards;
       }
     }
   }
