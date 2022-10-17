@@ -1,5 +1,6 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import Loader from "react-loaders";
 import { FaJediOrder } from "react-icons/fa";
 
 const IndexPage = () => {
@@ -17,6 +18,7 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
+      <Loader type="pacman" />
     </>
   );
 };
