@@ -295,3 +295,83 @@ Navbar
     }
   }
 }
+
+/*
+=============== 
+Homepage
+===============
+*/
+.home {
+  &__section {
+    background-color: #333;
+    background-image: url('../images/header-splash.jpg');
+    background-position: top;
+    background-size: cover;
+    color: #f1f1f1;
+    height: 100vh;
+    position: relative;
+
+    &-wrapper {
+      height: 100%;
+      width: 100%;
+      left: 50%;
+      top: 50%;
+      position: absolute;
+      text-align: center;
+      margin: 0;
+      transform: translate(-50%,-50%);
+    }
+
+    &-info {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+
+      .gatsby-image-wrapper {
+        border-radius: 100%;
+        display: block;
+        height: 30rem;
+        width: 30rem;
+        margin: auto;
+      }
+
+      h1 {
+        color: var(--clr-light-blue-green);
+        font-size: 4rem;
+        letter-spacing: 3px;
+        margin: 3rem auto 1rem;
+        text-transform: uppercase;
+      }
+
+      .subhead {
+        font-weight: 300;
+        letter-spacing: 3px;
+        margin-bottom: 1.5rem;
+      }
+
+      svg {
+        color: var(--clr-light-blue-green);
+        font-size: 5rem;
+      }
+    }
+  }
+}
+
+/*
+=============== 
+About page
+===============
+*/
+
+/*
+=============== 
+Portfolio
+===============
+*/
+
+/*
+=============== 
+Contact
+===============
+*/
