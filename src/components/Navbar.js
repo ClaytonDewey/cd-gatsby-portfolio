@@ -8,7 +8,9 @@ const Navbar = () => {
         {links.map((link) => {
           return (
             <li key={link.id}>
-              <Link to={link.url}>{link.text}</Link>
+              <Link to={link.url} activeClassName="active">
+                {link.text}
+              </Link>
             </li>
           );
         })}
