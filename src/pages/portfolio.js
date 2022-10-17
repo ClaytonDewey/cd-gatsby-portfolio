@@ -1,5 +1,6 @@
 import React from "react";
 import Loader from "react-loaders";
+import Projects from "../components/Projects";
 
 const Portfolio = () => {
   return (
@@ -10,6 +11,7 @@ const Portfolio = () => {
           <br />
           <span>My Work</span>
         </h1>
+        <Projects />
       </section>
       <Loader type="pacman" />
     </>
