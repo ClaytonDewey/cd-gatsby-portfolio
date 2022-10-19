@@ -32,14 +32,14 @@ const About = () => {
               When not working, or in class, I'm spending time with my daughter,
               listening to music, making pictures, or all of the above.
             </p>
-            <div class="flex btn__container">
-              <Link to="/contact" class="btn btn__primary">
+            <div className="flex btn__container">
+              <Link to="/contact" className="btn btn__primary">
                 Get In Touch
               </Link>
               <a
                 href="./files/Resume-Clayton_Dewey.pdf"
                 target="_blank"
-                class="btn btn__primary"
+                className="btn btn__primary"
               >
                 Download My Resume
               </a>
@@ -53,7 +53,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <Loader type="pacman" />
+      <Loader type="semi-circle-spin" />
     </>
   );
 };

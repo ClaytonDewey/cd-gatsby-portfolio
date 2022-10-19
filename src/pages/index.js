@@ -18,7 +18,7 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-      <Loader type="pacman" />
+      <Loader type="semi-circle-spin" />
     </>
   );
 };

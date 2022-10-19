@@ -13,7 +13,7 @@ const Portfolio = () => {
         </h1>
         <Projects />
       </section>
-      <Loader type="pacman" />
+      <Loader type="semi-circle-spin" />
     </>
   );
 };

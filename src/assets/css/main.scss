@@ -156,7 +156,7 @@ article {
 $primary-color: var(--clr-light-blue-green);
 
 @import 'animate.css';
-@import '~loaders.css/src/animations/pacman.scss';
+@import '~loaders.css/src/animations/semi-circle-spin.scss';
 .loader-active {
   display: block;
   position: absolute;
@@ -165,8 +165,8 @@ $primary-color: var(--clr-light-blue-green);
   margin: auto;
   top: 0;
   bottom: 0;
-  width: 50px;
-  height: 50px;
+  width: 10rem;
+  height: 10rem;
   animation: fadeOut 1s 1s;
   animation-fill-mode: forwards;
 }
