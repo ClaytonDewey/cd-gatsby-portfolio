@@ -1,5 +1,4 @@
 import React from "react";
-import Loader from "react-loaders";
 import Projects from "../components/Projects";
 
 const Portfolio = () => {
@@ -13,7 +12,6 @@ const Portfolio = () => {
         </h1>
         <Projects />
       </section>
-      <Loader type="semi-circle-spin" />
     </>
   );
 };

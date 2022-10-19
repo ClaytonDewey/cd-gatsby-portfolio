@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-import Loader from "react-loaders";
 import { StaticImage } from "gatsby-plugin-image";
 
 const About = () => {
@@ -53,7 +52,6 @@ const About = () => {
           </div>
         </div>
       </section>
-      <Loader type="semi-circle-spin" />
     </>
   );
 };

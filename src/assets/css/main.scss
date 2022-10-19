@@ -229,6 +229,7 @@ Navbar
   }
 
   &__primary {
+    animation: fadeInDown 1s 1.8s backwards;
     position: fixed;
     top: 0;
     left: 0;
