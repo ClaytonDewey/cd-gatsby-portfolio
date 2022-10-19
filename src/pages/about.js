@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import Loader from "react-loaders";
+import socialLinks from "../constants/social-links";
 
 const About = () => {
   return (
@@ -51,6 +52,19 @@ const About = () => {
               alt="Clayton Dewey"
             />
           </div>
+        </div>
+        <div className="about__social mt-4">
+          <ul>
+            {socialLinks.map((link) => {
+              return (
+                <li key={link.id}>
+                  <a href={link.url} target="_blank">
+                    {link.icon}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </section>
       <Loader type="semi-circle-spin" />

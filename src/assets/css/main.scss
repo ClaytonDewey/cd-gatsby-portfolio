@@ -410,6 +410,33 @@ About page
     }
   }
 
+  &__social {
+    animation: fadeIn 1s 1.8s backwards;
+    
+    ul {
+      list-style: none;
+      margin: auto;
+      text-align: center;
+      
+      li {
+        display: inline-block;
+        font-size: 5rem;
+
+        &:not(last-child) {
+          margin-right: 2.5rem;
+        }
+
+        a {
+          opacity: .75;
+          transition: opacity .2s ease-in-out;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
   @media #{$mq-small} {
     &__section {
       padding-top: 10rem;
