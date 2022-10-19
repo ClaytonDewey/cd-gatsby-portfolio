@@ -1,4 +1,5 @@
 import React from "react";
+import Loader from "react-loaders";
 
 const Contact = () => {
   return (
@@ -10,6 +11,7 @@ const Contact = () => {
           <span>Get in Touch</span>
         </h1>
       </section>
+      <Loader type="semi-circle-spin" />
     </>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { FaJediOrder } from "react-icons/fa";
+import Loader from "react-loaders";
 
 const IndexPage = () => {
   return (
@@ -17,6 +18,7 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
+      <Loader type="semi-circle-spin" />
     </>
   );
 };
