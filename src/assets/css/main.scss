@@ -137,16 +137,26 @@ article {
 .section {
 
   &__title {
-    display: inline-block;
+    font-size: 3rem;
     width: auto;
     padding-bottom: 2rem;
     margin-bottom: 3rem;
-    margin-left: 2rem;
-    border-bottom: 5px solid var(--clr-green);
+    margin-block: auto;
+    text-transform: capitalize;
+    text-align: center;
 
     span {
       font-size: 60%;
       font-weight: 300;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      height: 5px;
+      width: 10rem;
+      margin: 2rem auto;
+      background-color: var(--clr-light-blue-green);
     }
   }
 }
@@ -383,6 +393,49 @@ Homepage
         font-size: 5rem;
       }
     }
+  }
+}
+
+.jobs {
+  &__section {
+    padding: 5rem 0;
+    width: 80vw;
+    max-width: 117rem;
+    margin: 0 auto;
+  }
+
+  &__info {
+    h3 {
+      font-weight: 400;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h4 {
+      text-transform: uppercase;
+      background-color: var(--clr-light-blue-green);
+      display: inline-block;
+      padding: 5px 1rem;
+      border-radius: var(--radius);
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__date {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+
+  &__desc {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  &__icon {
+    color: var(--clr-light-blue-green);
   }
 }
 
