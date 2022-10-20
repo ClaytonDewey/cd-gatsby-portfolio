@@ -1,10 +1,14 @@
 import React from "react";
 import Project from "./Project";
+import Title from "./Title";
 
-const Projects = () => {
+const Projects = ({ title }) => {
   return (
     <>
-      <Project />
+      <section className="portfolio__section">
+        <Title title={title} />
+        <Project />
+      </section>
     </>
   );
 };
