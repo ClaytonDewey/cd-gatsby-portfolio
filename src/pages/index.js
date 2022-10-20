@@ -2,6 +2,8 @@ import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { FaJediOrder } from "react-icons/fa";
 import Loader from "react-loaders";
+import Jobs from "../components/Jobs";
+import Projects from "../components/Projects";
 
 const IndexPage = () => {
   return (
@@ -18,6 +20,8 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
+      <Jobs />
+      <Projects title="featured projects" />
       <Loader type="semi-circle-spin" />
     </>
   );
